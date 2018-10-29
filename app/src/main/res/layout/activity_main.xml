@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/queryProductDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询商品详情"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showProductDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/queryProductDetails" />
+
+    <Button
+        android:id="@+id/purchase_latiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="买包辣条-吃掉"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showProductDetails" />
+
+
+    <Button
+        android:id="@+id/purchase_laogangma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="买瓶老干妈-吃掉"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/purchase_latiao" />
+
+    <Button
+        android:id="@+id/purchase_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="购买订阅内容"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/purchase_laogangma" />
+
+    <Button
+        android:id="@+id/consume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消耗所有未消耗的商品"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/purchase_sub" />
+
+
+</android.support.constraint.ConstraintLayout>
